@@ -1,0 +1,129 @@
+@charset "UTF-8";
+/* Fonte principal */
+/* Cor do fundo */
+/* Cor do Fundo hover */
+/* Cor da fonte */
+/* Cor dos botões */
+/* Cor aprovado , reprovado, recuperação */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  width: 100vw;
+}
+
+#formulario {
+  width: 100%;
+  margin: 4rem auto;
+  display: block;
+  text-align: center;
+}
+#formulario h1 {
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+}
+
+form {
+  width: 300px;
+  margin: 1rem auto;
+  padding: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  border-radius: 0.5rem;
+  background-color: #6f6d56;
+}
+form .form-group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.2rem;
+}
+form .input {
+  padding: 0.3rem 1rem;
+  border-radius: 0.2rem;
+  border: none;
+}
+form .buttons {
+  display: flex;
+  gap: 1rem;
+  padding: 0.2rem 0;
+}
+form .buttons .botoes {
+  padding: 0.25rem 0.5rem;
+  border-radius: 5px;
+  border: none;
+  color: var(--cor-principal);
+  font-weight: 600;
+  cursor: pointer;
+}
+form .buttons .btnCalcular {
+  background-color: var(--cor-botao-um);
+}
+form .buttons .btnCalcular:hover {
+  background-color: var(--bg-color-hover-um);
+  transition: 0.3s;
+}
+form .buttons .btnLimpar {
+  background-color: var(--cor-botao-dois);
+}
+form .buttons .btnLimpar:hover {
+  background-color: var(--bg-color-hover-dois);
+  transition: 0.3s;
+}
+
+#media {
+  padding: 0.2rem 2rem;
+  border-radius: 0.2rem;
+  border: none;
+}
+
+.situacao {
+  padding: 0.5rem;
+  border-radius: 0.2rem;
+  border: none;
+  text-align: center;
+}
+
+.situacao::-moz-placeholder {
+  font-size: 1rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.situacao::placeholder {
+  font-size: 1rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+#aviso {
+  margin: 1rem 2rem;
+  padding: 0.5rem;
+  border-radius: 5px;
+}
+
+/* CLASSES ADICIONADAS POR JAVASCRIPT */
+.aprovado {
+  background-color: var(--cor-aprovado);
+  text-transform: uppercase;
+}
+
+.reprovado {
+  background-color: var(--cor-reprovado);
+}
+
+.recuperacao {
+  background-color: var(--cor-recuperacao);
+}
+
+.alerta {
+  background-color: var(--cor-reprovado);
+}/*# sourceMappingURL=style.css.map */
