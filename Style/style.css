@@ -1,6 +1,7 @@
 @charset "UTF-8";
 /* Fonte principal */
 /* Cor do fundo */
+/* Cor da sombra */
 /* Cor do Fundo hover */
 /* Cor da fonte */
 /* Cor dos botões */
@@ -15,6 +16,7 @@ body {
   font-family: "Roboto", sans-serif;
   font-size: 1rem;
   width: 100vw;
+  background-color: #E4F1FF;
 }
 
 #formulario {
@@ -27,6 +29,18 @@ body {
   font-size: 2rem;
   text-transform: uppercase;
   letter-spacing: 0.5rem;
+  filter: drop-shadow(1px 1px 1px black);
+}
+#formulario #aviso {
+  width: 50%;
+  margin: 1rem auto;
+  padding: 0.5rem;
+  border-radius: 5px;
+}
+@media screen and (min-width: 764px) {
+  #formulario #aviso {
+    width: 15%;
+  }
 }
 
 form {
@@ -38,92 +52,100 @@ form {
   align-items: center;
   gap: 1rem;
   border-radius: 0.5rem;
-  background-color: #6f6d56;
+  filter: drop-shadow(5px 5px 4px #9400FF);
+  background-color: #AED2FF;
+}
+form p {
+  font-size: 1.3rem;
+  font-weight: 500;
+  padding: 1rem;
 }
 form .form-group {
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 0.2rem;
+  align-items: center;
+  gap: 1rem;
 }
-form .input {
-  padding: 0.3rem 1rem;
+form .form-group label {
+  font-weight: 500;
+}
+form .form-group .input {
+  padding: 0.3rem 1.5rem;
   border-radius: 0.2rem;
   border: none;
+  text-align: center;
 }
 form .buttons {
   display: flex;
-  gap: 1rem;
-  padding: 0.2rem 0;
+  gap: 2rem;
 }
 form .buttons .botoes {
-  padding: 0.25rem 0.5rem;
-  border-radius: 5px;
   border: none;
-  color: var(--cor-principal);
-  font-weight: 600;
+  border-radius: 0.4rem;
+  padding: 0.3rem 0.65rem;
   cursor: pointer;
 }
 form .buttons .btnCalcular {
-  background-color: var(--cor-botao-um);
+  background-color: #008148;
 }
 form .buttons .btnCalcular:hover {
-  background-color: var(--bg-color-hover-um);
-  transition: 0.3s;
+  background-color: rgba(0, 129, 71, 0.6509803922);
+  transition: 0.4s;
 }
 form .buttons .btnLimpar {
-  background-color: var(--cor-botao-dois);
+  background-color: #8a6d29;
 }
 form .buttons .btnLimpar:hover {
-  background-color: var(--bg-color-hover-dois);
-  transition: 0.3s;
+  background-color: #958867;
+  transition: 0.4s;
 }
-
-#media {
+form .media-group {
+  display: flex;
+  flex-direction: column;
+}
+form .media-group label {
+  text-transform: uppercase;
+  color: #57375D;
+  font-size: 1.2rem;
+}
+form .media-group #media {
   padding: 0.2rem 2rem;
   border-radius: 0.2rem;
   border: none;
+  text-align: center;
 }
-
-.situacao {
+form .situacao {
   padding: 0.5rem;
   border-radius: 0.2rem;
   border: none;
   text-align: center;
 }
-
-.situacao::-moz-placeholder {
+form .situacao::-moz-placeholder {
   font-size: 1rem;
   text-transform: uppercase;
   text-align: center;
 }
-
-.situacao::placeholder {
+form .situacao::placeholder {
   font-size: 1rem;
   text-transform: uppercase;
   text-align: center;
-}
-
-#aviso {
-  margin: 1rem 2rem;
-  padding: 0.5rem;
-  border-radius: 5px;
 }
 
 /* CLASSES ADICIONADAS POR JAVASCRIPT */
 .aprovado {
-  background-color: var(--cor-aprovado);
+  background-color: #23a323;
   text-transform: uppercase;
 }
 
 .reprovado {
-  background-color: var(--cor-reprovado);
+  background-color: #a82e2e;
+  text-transform: uppercase;
 }
 
 .recuperacao {
-  background-color: var(--cor-recuperacao);
+  background-color: rgba(255, 166, 0, 0.578);
+  text-transform: uppercase;
 }
 
 .alerta {
-  background-color: var(--cor-reprovado);
+  background-color: #a82e2e;
 }/*# sourceMappingURL=style.css.map */

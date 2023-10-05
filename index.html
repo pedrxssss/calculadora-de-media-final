@@ -18,18 +18,33 @@
         <section class="conteudo" id="formulario">
             <h1>Calculadora de media</h1>
             <form action="#" method="post">
-
+                <p>Digite suas notas abaixo para obter sua média.</p>
+        
                 <!-- Nota 1 -->
                 <div class="form-group">
-                    <label for="nota1">Nota 1</label>
+                    <label for="nota1">Nota 1:</label>
                     <input type="number" min="0.0" max="10.0" step="0.1" name="nota1" id="nota1" class="input" autofocus
                         required onblur="validarNumero(this)">
                 </div>
 
                 <!-- Nota 2 -->
                 <div class="form-group">
-                    <label for="nota2">Nota 2</label>
+                    <label for="nota2">Nota 2:</label>
                     <input type="number" min="0.0" max="10.0" step="0.1" name="nota2" id="nota2" class="input" required
+                        onblur="validarNumero(this)">
+                </div>
+
+                <!-- Nota 3 -->
+                <div class="form-group">
+                    <label for="nota3">Nota 3:</label>
+                    <input type="number" min="0.0" max="10.0" step="0.1" name="nota3" id="nota3" class="input" required
+                        onblur="validarNumero(this)">
+                </div>
+
+                <!-- Nota 4 -->
+                <div class="form-group">
+                    <label for="nota4">Nota 4:</label>
+                    <input type="number" min="0.0" max="10.0" step="0.1" name="nota4" id="nota4" class="input" required
                         onblur="validarNumero(this)">
                 </div>
 
@@ -41,7 +56,7 @@
 
                 <!-- Media das notas -->
                 <div class="form-group media-group">
-                    <label for="media">Média</label>
+                    <label for="media">Resultado da média</label>
                     <input type="number" min="0.0" max="10.0" step="0.1" name="media" id="media" value="" readonly>
                 </div>
 
