@@ -116,7 +116,7 @@ btnCalcular.addEventListener('click', function (e) {
         || calcularMediaPorDois(nota1, nota2)
 
 
-    //Arredondamento de nota caso o resultado da media for 5.5 se tornar 6
+    //Arredondamento de nota caso o resultado da media for 5.96 se tornar 6
     if (media >= 5.96 && media < 6) {
         media = 6
     }
