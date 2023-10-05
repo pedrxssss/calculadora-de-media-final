@@ -37,7 +37,7 @@ function calcularMediaPorDois(n1, n2) {
 function situacaoFinal(mediaFinal) {
     let situacaoFinal = ''
 
-    if (mediaFinal > 6) {
+    if (mediaFinal >= 6) {
         situacaoFinal = 'Aprovado(a)!'
     } else if (mediaFinal < 3.5) {
         situacaoFinal = 'Reprovado(a)!'
@@ -114,7 +114,7 @@ btnCalcular.addEventListener('click', function (e) {
     let media = calcularMediaPorQuatro(nota1, nota2, nota3, nota4)
         || calcularMediaPorTres(nota1, nota2, nota3)
         || calcularMediaPorDois(nota1, nota2)
-        
+
     console.log(nota1)
     console.log(nota2)
     console.log(nota3)
