@@ -37,7 +37,7 @@ function calcularMediaPorDois(n1, n2) {
 function situacaoFinal(mediaFinal) {
     let situacaoFinal = ''
 
-    if (mediaFinal >= 6 || mediaFinal > 5.5) {
+    if (mediaFinal >= 6 || mediaFinal > 5.96) {
         situacaoFinal = 'Aprovado(a)!'
     } else if (mediaFinal < 3.5) {
         situacaoFinal = 'Reprovado(a)!'
@@ -117,7 +117,7 @@ btnCalcular.addEventListener('click', function (e) {
 
 
     //Arredondamento de nota caso o resultado da media for 5.5 se tornar 6
-    if (media >= 5.5 && media < 6) {
+    if (media >= 5.96 && media < 6) {
         media = 6
     }
 
