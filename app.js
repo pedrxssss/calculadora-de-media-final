@@ -37,7 +37,7 @@ function calcularMediaPorDois(n1, n2) {
 function situacaoFinal(mediaFinal) {
     let situacaoFinal = ''
 
-    if (mediaFinal >= 6) {
+    if (mediaFinal >= 6 || mediaFinal > 5.5) {
         situacaoFinal = 'Aprovado(a)!'
     } else if (mediaFinal < 3.5) {
         situacaoFinal = 'Reprovado(a)!'
@@ -115,11 +115,18 @@ btnCalcular.addEventListener('click', function (e) {
         || calcularMediaPorTres(nota1, nota2, nota3)
         || calcularMediaPorDois(nota1, nota2)
 
+
+    //Arredondamento de nota caso o resultado da media for 5.5 se tornar 6
+    if (media >= 5.5 && media < 6) {
+        media = 6
+    }
+
     console.log(nota1)
     console.log(nota2)
     console.log(nota3)
     console.log(nota4)
     console.log(media)
+
 
     //
     if (isNaN(media) || media < 0) {
@@ -130,6 +137,7 @@ btnCalcular.addEventListener('click', function (e) {
         cxSit.value = situacaoFinal(media)
         formatarSituacao(situacaoFinal(media))
     }
+
 })
 
 //Botão de limpar tirar as classes dos Sit
